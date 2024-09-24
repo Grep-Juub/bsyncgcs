@@ -16,7 +16,6 @@ BsyncGcs is a tool designed to synchronize a vast number of small files from Goo
   - [Populator Mode Script](#populator-mode-script)
   - [Worker Mode Script](#worker-mode-script)
 - [Context and Motivation](#context-and-motivation)
-- [License](#license)
 
 ## How It Works
 
