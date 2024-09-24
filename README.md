@@ -1,11 +1,10 @@
 
 # BsyncGcs (Billion Sync GCS)
 
-BsyncGcs is a high-performance tool designed to synchronize a vast number of small files from Google Cloud Storage (GCS) to Amazon S3. By leveraging a distributed architecture and the power of AWS SQS queues, BsyncGcs efficiently handles the migration of billions of files, making it ideal for large-scale data transfer tasks.
+BsyncGcs is a tool designed to synchronize a vast number of small files from Google Cloud Storage (GCS) to Amazon S3. By leveraging a distributed architecture and the power of AWS SQS queues, BsyncGcs efficiently handles the migration of billions of files, making it ideal for large-scale data transfer tasks.
 
 ## Table of Contents
 
-- [Background](#background)
 - [How It Works](#how-it-works)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
@@ -18,10 +17,6 @@ BsyncGcs is a high-performance tool designed to synchronize a vast number of sma
   - [Worker Mode Script](#worker-mode-script)
 - [Context and Motivation](#context-and-motivation)
 - [License](#license)
-
-## Background
-
-When faced with the challenge of migrating approximately **300 TB** of data consisting of nearly **1 billion files** (each around **200 KB**) from GCS to S3, traditional methods proved inefficient. BsyncGcs was developed to address this need by utilizing AWS Elastic Kubernetes Service (EKS) to run multiple workers concurrently, significantly speeding up the migration process.
 
 ## How It Works
 
@@ -171,12 +166,3 @@ Due to the small size of each file (~200 KB), the overhead of transferring files
 - **Scalable Architecture**: Deploy the solution on an AWS EKS cluster, allowing for horizontal scaling based on workload.
 
 By implementing BsyncGcs, we achieved a high-throughput migration process, significantly reducing the total time required for the data transfer.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-**Note:** Replace placeholder values in the example scripts and configuration sections with your actual AWS and GCS settings before running the application.
-
