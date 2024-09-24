@@ -1,0 +1,42 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+
+# Output of the build
+bin/
+dist/
+build/
+
+# Go modules
+go.mod
+go.sum
+
+# IDE and Editor files
+.idea/
+.vscode/
+*.swp
+
+# Temporary files and directories
+*.log
+*.tmp
+*.out
+*.bak
+*.tmp.*
+
+# Test result files
+*.coverprofile
+
+# Directories created by go tooling
+.coverage/
+.cache/
+.caches/
+
+# System files
+.DS_Store
+
+# Application-specific
+populate.sh
+worker.sh
